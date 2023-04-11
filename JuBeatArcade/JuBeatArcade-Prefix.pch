@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JuBeatArcade' target in the 'JuBeatArcade' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

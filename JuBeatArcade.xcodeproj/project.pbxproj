@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0481BB2199F4B3000AF45B3 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0481BB1199F4B3000AF45B3 /* libsubstrate.dylib */; };
+		C0481BE8199F514300AF45B3 /* DebugHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481BC7199F514300AF45B3 /* DebugHelper.h */; };
+		C0481BE9199F514300AF45B3 /* DebugHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481BC8199F514300AF45B3 /* DebugHelper.m */; };
+		C0481BEA199F514300AF45B3 /* DesHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481BC9199F514300AF45B3 /* DesHelper.h */; };
+		C0481BEB199F514300AF45B3 /* DesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481BCA199F514300AF45B3 /* DesHelper.m */; };
+		C0481BEC199F514300AF45B3 /* EncryptHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481BCB199F514300AF45B3 /* EncryptHelper.h */; };
+		C0481BED199F514300AF45B3 /* EncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481BCC199F514300AF45B3 /* EncryptHelper.m */; };
+		C0481BEE199F514300AF45B3 /* FileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481BCD199F514300AF45B3 /* FileHelper.h */; };
+		C0481BEF199F514300AF45B3 /* FileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481BCE199F514300AF45B3 /* FileHelper.m */; };
+		C0481BF3199F514300AF45B3 /* JbaHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481BD3199F514300AF45B3 /* JbaHelper.h */; };
+		C0481BF4199F514300AF45B3 /* JbaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481BD4199F514300AF45B3 /* JbaHelper.m */; };
+		C0481C08199F519900AF45B3 /* ServerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481BFD199F519900AF45B3 /* ServerHelper.h */; };
+		C0481C09199F519900AF45B3 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481BFE199F519900AF45B3 /* ServerHelper.m */; };
+		C0481C2D199F6A3500AF45B3 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C10199F6A3500AF45B3 /* AFHTTPRequestOperation.h */; };
+		C0481C2E199F6A3500AF45B3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C11199F6A3500AF45B3 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C2F199F6A3500AF45B3 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C12199F6A3500AF45B3 /* AFHTTPRequestOperationManager.h */; };
+		C0481C30199F6A3500AF45B3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C13199F6A3500AF45B3 /* AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C31199F6A3500AF45B3 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C14199F6A3500AF45B3 /* AFHTTPSessionManager.h */; };
+		C0481C32199F6A3500AF45B3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C15199F6A3500AF45B3 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C33199F6A3500AF45B3 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C16199F6A3500AF45B3 /* AFNetworking.h */; };
+		C0481C34199F6A3500AF45B3 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C17199F6A3500AF45B3 /* AFNetworkReachabilityManager.h */; };
+		C0481C35199F6A3500AF45B3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C18199F6A3500AF45B3 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C36199F6A3500AF45B3 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C19199F6A3500AF45B3 /* AFSecurityPolicy.h */; };
+		C0481C37199F6A3500AF45B3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C1A199F6A3500AF45B3 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C38199F6A3500AF45B3 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C1B199F6A3500AF45B3 /* AFURLConnectionOperation.h */; };
+		C0481C39199F6A3500AF45B3 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C1C199F6A3500AF45B3 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C3A199F6A3500AF45B3 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C1D199F6A3500AF45B3 /* AFURLRequestSerialization.h */; };
+		C0481C3B199F6A3500AF45B3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C1E199F6A3500AF45B3 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C3C199F6A3500AF45B3 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C1F199F6A3500AF45B3 /* AFURLResponseSerialization.h */; };
+		C0481C3D199F6A3500AF45B3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C20199F6A3500AF45B3 /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C3E199F6A3500AF45B3 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C21199F6A3500AF45B3 /* AFURLSessionManager.h */; };
+		C0481C3F199F6A3500AF45B3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C22199F6A3500AF45B3 /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C0481C40199F6A3500AF45B3 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C23199F6A3500AF45B3 /* Base64.h */; };
+		C0481C41199F6A3500AF45B3 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C24199F6A3500AF45B3 /* Base64.m */; };
+		C0481C42199F6A3500AF45B3 /* RNCryptor-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C0481C25199F6A3500AF45B3 /* RNCryptor-Prefix.pch */; };
+		C0481C43199F6A3500AF45B3 /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C26199F6A3500AF45B3 /* RNCryptor.h */; };
+		C0481C44199F6A3500AF45B3 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C27199F6A3500AF45B3 /* RNCryptor.m */; };
+		C0481C45199F6A3500AF45B3 /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C28199F6A3500AF45B3 /* RNCryptor+Private.h */; };
+		C0481C46199F6A3500AF45B3 /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C29199F6A3500AF45B3 /* RNCryptorEngine.h */; };
+		C0481C47199F6A3500AF45B3 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C2A199F6A3500AF45B3 /* RNCryptorEngine.m */; };
+		C0481C48199F6A3500AF45B3 /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C2B199F6A3500AF45B3 /* RNDecryptor.h */; };
+		C0481C49199F6A3500AF45B3 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C2C199F6A3500AF45B3 /* RNDecryptor.m */; };
+		C0481C4D199F6AF900AF45B3 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C4A199F6AF900AF45B3 /* GTMBase64.h */; };
+		C0481C4E199F6AF900AF45B3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C0481C4B199F6AF900AF45B3 /* GTMBase64.m */; };
+		C0481C4F199F6AF900AF45B3 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C4C199F6AF900AF45B3 /* GTMDefines.h */; };
+		C0481C55199FAE4900AF45B3 /* BFCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C52199FAE4900AF45B3 /* BFCodec.h */; };
+		C0481C56199FAE4900AF45B3 /* KUnzip.h in Headers */ = {isa = PBXBuildFile; fileRef = C0481C53199FAE4900AF45B3 /* KUnzip.h */; };
+		C075E41A199F482200F4CEE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C075E419199F482200F4CEE0 /* Foundation.framework */; };
+		C075E425199F482200F4CEE0 /* JuBeatArcade.mm in Sources */ = {isa = PBXBuildFile; fileRef = C075E424199F482200F4CEE0 /* JuBeatArcade.mm */; };
+		FA14DE0E1A79D6070086A2B3 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = FA14DE0D1A79D6070086A2B3 /* Sequence.h */; };
+		FA1BD22A1A9C9D4000C36EFC /* MarkerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1BD2291A9C9D4000C36EFC /* MarkerManager.h */; };
+		FA1BD22D1A9CAF8200C36EFC /* CocoaSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1BD22B1A9CAF8200C36EFC /* CocoaSecurity.h */; };
+		FA1BD22E1A9CAF8200C36EFC /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1BD22C1A9CAF8200C36EFC /* CocoaSecurity.m */; };
+		FA1C068B1AAF39FA00E4E2B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C068A1AAF39FA00E4E2B2 /* CoreGraphics.framework */; };
+		FA5066CA1A9CBD6B000EF2F3 /* MarkerTestView.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5066C91A9CBD6B000EF2F3 /* MarkerTestView.h */; };
+		FA5845671A5FE169002F3561 /* IO.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5845661A5FE169002F3561 /* IO.h */; };
+		FA96B3291A6CEE0900752F03 /* JubeatAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FA96B3281A6CEE0900752F03 /* JubeatAppDelegate.h */; };
+		FA96B32D1A6CF83B00752F03 /* RendererConf.h in Headers */ = {isa = PBXBuildFile; fileRef = FA96B32C1A6CF83B00752F03 /* RendererConf.h */; };
+		FA96B32F1A6CF84C00752F03 /* GameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA96B32E1A6CF84C00752F03 /* GameViewController.h */; };
+		FAA5DDCB1AE7CDB6006A7371 /* libMobileGestalt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA5DDCA1AE7CDB6006A7371 /* libMobileGestalt.dylib */; };
+		FAA5DDCD1AE7CE0A006A7371 /* MobileGestalt.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA5DDCC1AE7CE0A006A7371 /* MobileGestalt.h */; };
+		FAED2A611A6565DC00069751 /* jubeatLabAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = FAED2A601A6565DC00069751 /* jubeatLabAccess.h */; };
+		FAED2A631A6566D900069751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAED2A621A6566D900069751 /* UIKit.framework */; };
+		FAED2A651A65678B00069751 /* EditDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAED2A641A65678B00069751 /* EditDataManager.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0481BB1199F4B3000AF45B3 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		C0481BC7199F514300AF45B3 /* DebugHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugHelper.h; sourceTree = "<group>"; };
+		C0481BC8199F514300AF45B3 /* DebugHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugHelper.m; sourceTree = "<group>"; };
+		C0481BC9199F514300AF45B3 /* DesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesHelper.h; sourceTree = "<group>"; };
+		C0481BCA199F514300AF45B3 /* DesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesHelper.m; sourceTree = "<group>"; };
+		C0481BCB199F514300AF45B3 /* EncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptHelper.h; sourceTree = "<group>"; };
+		C0481BCC199F514300AF45B3 /* EncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptHelper.m; sourceTree = "<group>"; };
+		C0481BCD199F514300AF45B3 /* FileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHelper.h; sourceTree = "<group>"; };
+		C0481BCE199F514300AF45B3 /* FileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHelper.m; sourceTree = "<group>"; };
+		C0481BD3199F514300AF45B3 /* JbaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JbaHelper.h; sourceTree = "<group>"; };
+		C0481BD4199F514300AF45B3 /* JbaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JbaHelper.m; sourceTree = "<group>"; };
+		C0481BFD199F519900AF45B3 /* ServerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerHelper.h; sourceTree = "<group>"; };
+		C0481BFE199F519900AF45B3 /* ServerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerHelper.m; sourceTree = "<group>"; };
+		C0481C10199F6A3500AF45B3 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = Librarys/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		C0481C11199F6A3500AF45B3 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = Librarys/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		C0481C12199F6A3500AF45B3 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = Librarys/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		C0481C13199F6A3500AF45B3 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = Librarys/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		C0481C14199F6A3500AF45B3 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = Librarys/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C0481C15199F6A3500AF45B3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = Librarys/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		C0481C16199F6A3500AF45B3 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = Librarys/AFNetworking.h; sourceTree = "<group>"; };
+		C0481C17199F6A3500AF45B3 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = Librarys/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C0481C18199F6A3500AF45B3 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = Librarys/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C0481C19199F6A3500AF45B3 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = Librarys/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C0481C1A199F6A3500AF45B3 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = Librarys/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		C0481C1B199F6A3500AF45B3 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = Librarys/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		C0481C1C199F6A3500AF45B3 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = Librarys/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		C0481C1D199F6A3500AF45B3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = Librarys/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		C0481C1E199F6A3500AF45B3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = Librarys/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		C0481C1F199F6A3500AF45B3 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = Librarys/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		C0481C20199F6A3500AF45B3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = Librarys/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		C0481C21199F6A3500AF45B3 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = Librarys/AFURLSessionManager.h; sourceTree = "<group>"; };
+		C0481C22199F6A3500AF45B3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = Librarys/AFURLSessionManager.m; sourceTree = "<group>"; };
+		C0481C23199F6A3500AF45B3 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = Librarys/Base64.h; sourceTree = "<group>"; };
+		C0481C24199F6A3500AF45B3 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = Librarys/Base64.m; sourceTree = "<group>"; };
+		C0481C25199F6A3500AF45B3 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNCryptor-Prefix.pch"; path = "Librarys/RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		C0481C26199F6A3500AF45B3 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNCryptor.h; path = Librarys/RNCryptor.h; sourceTree = "<group>"; };
+		C0481C27199F6A3500AF45B3 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNCryptor.m; path = Librarys/RNCryptor.m; sourceTree = "<group>"; };
+		C0481C28199F6A3500AF45B3 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNCryptor+Private.h"; path = "Librarys/RNCryptor+Private.h"; sourceTree = "<group>"; };
+		C0481C29199F6A3500AF45B3 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNCryptorEngine.h; path = Librarys/RNCryptorEngine.h; sourceTree = "<group>"; };
+		C0481C2A199F6A3500AF45B3 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNCryptorEngine.m; path = Librarys/RNCryptorEngine.m; sourceTree = "<group>"; };
+		C0481C2B199F6A3500AF45B3 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNDecryptor.h; path = Librarys/RNDecryptor.h; sourceTree = "<group>"; };
+		C0481C2C199F6A3500AF45B3 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNDecryptor.m; path = Librarys/RNDecryptor.m; sourceTree = "<group>"; };
+		C0481C4A199F6AF900AF45B3 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMBase64.h; path = Librarys/GTMBase64.h; sourceTree = "<group>"; };
+		C0481C4B199F6AF900AF45B3 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMBase64.m; path = Librarys/GTMBase64.m; sourceTree = "<group>"; };
+		C0481C4C199F6AF900AF45B3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = Librarys/GTMDefines.h; sourceTree = "<group>"; };
+		C0481C52199FAE4900AF45B3 /* BFCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFCodec.h; sourceTree = "<group>"; };
+		C0481C53199FAE4900AF45B3 /* KUnzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KUnzip.h; sourceTree = "<group>"; };
+		C075E416199F482200F4CEE0 /* JuBeatArcade.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = JuBeatArcade.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C075E419199F482200F4CEE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C075E41E199F482200F4CEE0 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C075E41F199F482200F4CEE0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C075E421199F482200F4CEE0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C075E422199F482200F4CEE0 /* JuBeatArcade-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JuBeatArcade-Prefix.pch"; sourceTree = "<group>"; };
+		C075E423199F482200F4CEE0 /* JuBeatArcade.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = JuBeatArcade.xm; sourceTree = "<group>"; wrapsLines = 0; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C075E424199F482200F4CEE0 /* JuBeatArcade.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JuBeatArcade.mm; sourceTree = "<group>"; };
+		C075E429199F482200F4CEE0 /* JuBeatArcade.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = JuBeatArcade.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/JuBeatArcade.plist; sourceTree = "<group>"; };
+		FA0620041AAAF72700663498 /* MarkerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MarkerList.plist; sourceTree = "<group>"; };
+		FA14DE0D1A79D6070086A2B3 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		FA1BD2291A9C9D4000C36EFC /* MarkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerManager.h; sourceTree = "<group>"; };
+		FA1BD22B1A9CAF8200C36EFC /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		FA1BD22C1A9CAF8200C36EFC /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		FA1C068A1AAF39FA00E4E2B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA5066C91A9CBD6B000EF2F3 /* MarkerTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerTestView.h; sourceTree = "<group>"; };
+		FA5845661A5FE169002F3561 /* IO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IO.h; sourceTree = "<group>"; };
+		FA96B3281A6CEE0900752F03 /* JubeatAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JubeatAppDelegate.h; sourceTree = "<group>"; };
+		FA96B32C1A6CF83B00752F03 /* RendererConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RendererConf.h; sourceTree = "<group>"; };
+		FA96B32E1A6CF84C00752F03 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		FAA5DDCA1AE7CDB6006A7371 /* libMobileGestalt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libMobileGestalt.dylib; sourceTree = "<group>"; };
+		FAA5DDCC1AE7CE0A006A7371 /* MobileGestalt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileGestalt.h; sourceTree = "<group>"; };
+		FAED2A601A6565DC00069751 /* jubeatLabAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jubeatLabAccess.h; sourceTree = "<group>"; };
+		FAED2A621A6566D900069751 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAED2A641A65678B00069751 /* EditDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDataManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C075E412199F482200F4CEE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5DDCB1AE7CDB6006A7371 /* libMobileGestalt.dylib in Frameworks */,
+				FA1C068B1AAF39FA00E4E2B2 /* CoreGraphics.framework in Frameworks */,
+				FAED2A631A6566D900069751 /* UIKit.framework in Frameworks */,
+				C0481BB2199F4B3000AF45B3 /* libsubstrate.dylib in Frameworks */,
+				C075E41A199F482200F4CEE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0481C0F199F63AA00AF45B3 /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+				C0481C10199F6A3500AF45B3 /* AFHTTPRequestOperation.h */,
+				C0481C11199F6A3500AF45B3 /* AFHTTPRequestOperation.m */,
+				C0481C12199F6A3500AF45B3 /* AFHTTPRequestOperationManager.h */,
+				C0481C13199F6A3500AF45B3 /* AFHTTPRequestOperationManager.m */,
+				C0481C14199F6A3500AF45B3 /* AFHTTPSessionManager.h */,
+				C0481C15199F6A3500AF45B3 /* AFHTTPSessionManager.m */,
+				C0481C16199F6A3500AF45B3 /* AFNetworking.h */,
+				C0481C17199F6A3500AF45B3 /* AFNetworkReachabilityManager.h */,
+				C0481C18199F6A3500AF45B3 /* AFNetworkReachabilityManager.m */,
+				C0481C19199F6A3500AF45B3 /* AFSecurityPolicy.h */,
+				C0481C1A199F6A3500AF45B3 /* AFSecurityPolicy.m */,
+				FA1BD22B1A9CAF8200C36EFC /* CocoaSecurity.h */,
+				FA1BD22C1A9CAF8200C36EFC /* CocoaSecurity.m */,
+				C0481C1B199F6A3500AF45B3 /* AFURLConnectionOperation.h */,
+				C0481C1C199F6A3500AF45B3 /* AFURLConnectionOperation.m */,
+				C0481C1D199F6A3500AF45B3 /* AFURLRequestSerialization.h */,
+				C0481C1E199F6A3500AF45B3 /* AFURLRequestSerialization.m */,
+				C0481C1F199F6A3500AF45B3 /* AFURLResponseSerialization.h */,
+				C0481C20199F6A3500AF45B3 /* AFURLResponseSerialization.m */,
+				C0481C21199F6A3500AF45B3 /* AFURLSessionManager.h */,
+				C0481C22199F6A3500AF45B3 /* AFURLSessionManager.m */,
+				C0481C23199F6A3500AF45B3 /* Base64.h */,
+				C0481C24199F6A3500AF45B3 /* Base64.m */,
+				C0481C4A199F6AF900AF45B3 /* GTMBase64.h */,
+				C0481C4B199F6AF900AF45B3 /* GTMBase64.m */,
+				C0481C4C199F6AF900AF45B3 /* GTMDefines.h */,
+				C0481C25199F6A3500AF45B3 /* RNCryptor-Prefix.pch */,
+				C0481C26199F6A3500AF45B3 /* RNCryptor.h */,
+				C0481C27199F6A3500AF45B3 /* RNCryptor.m */,
+				C0481C28199F6A3500AF45B3 /* RNCryptor+Private.h */,
+				C0481C29199F6A3500AF45B3 /* RNCryptorEngine.h */,
+				C0481C2A199F6A3500AF45B3 /* RNCryptorEngine.m */,
+				C0481C2B199F6A3500AF45B3 /* RNDecryptor.h */,
+				C0481C2C199F6A3500AF45B3 /* RNDecryptor.m */,
+			);
+			name = Librarys;
+			sourceTree = "<group>";
+		};
+		C075E40B199F482200F4CEE0 = {
+			isa = PBXGroup;
+			children = (
+				C075E41B199F482200F4CEE0 /* JuBeatArcade */,
+				C075E418199F482200F4CEE0 /* Frameworks */,
+				C075E417199F482200F4CEE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C075E417199F482200F4CEE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C075E416199F482200F4CEE0 /* JuBeatArcade.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C075E418199F482200F4CEE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5DDCA1AE7CDB6006A7371 /* libMobileGestalt.dylib */,
+				FA1C068A1AAF39FA00E4E2B2 /* CoreGraphics.framework */,
+				FAED2A621A6566D900069751 /* UIKit.framework */,
+				C0481BB1199F4B3000AF45B3 /* libsubstrate.dylib */,
+				C075E419199F482200F4CEE0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C075E41B199F482200F4CEE0 /* JuBeatArcade */ = {
+			isa = PBXGroup;
+			children = (
+				C0481C0F199F63AA00AF45B3 /* Librarys */,
+				C0481BC7199F514300AF45B3 /* DebugHelper.h */,
+				C0481BC8199F514300AF45B3 /* DebugHelper.m */,
+				C0481BC9199F514300AF45B3 /* DesHelper.h */,
+				FA5845661A5FE169002F3561 /* IO.h */,
+				C0481BCA199F514300AF45B3 /* DesHelper.m */,
+				C0481BCB199F514300AF45B3 /* EncryptHelper.h */,
+				FAED2A641A65678B00069751 /* EditDataManager.h */,
+				C0481BCC199F514300AF45B3 /* EncryptHelper.m */,
+				C0481BCD199F514300AF45B3 /* FileHelper.h */,
+				C0481BCE199F514300AF45B3 /* FileHelper.m */,
+				C0481BD3199F514300AF45B3 /* JbaHelper.h */,
+				C0481BD4199F514300AF45B3 /* JbaHelper.m */,
+				C0481BFD199F519900AF45B3 /* ServerHelper.h */,
+				C0481BFE199F519900AF45B3 /* ServerHelper.m */,
+				FAA5DDCC1AE7CE0A006A7371 /* MobileGestalt.h */,
+				C075E423199F482200F4CEE0 /* JuBeatArcade.xm */,
+				C075E424199F482200F4CEE0 /* JuBeatArcade.mm */,
+				FA96B3281A6CEE0900752F03 /* JubeatAppDelegate.h */,
+				C0481C53199FAE4900AF45B3 /* KUnzip.h */,
+				FA1BD2291A9C9D4000C36EFC /* MarkerManager.h */,
+				FA5066C91A9CBD6B000EF2F3 /* MarkerTestView.h */,
+				FA96B32C1A6CF83B00752F03 /* RendererConf.h */,
+				FA96B32E1A6CF84C00752F03 /* GameViewController.h */,
+				FA14DE0D1A79D6070086A2B3 /* Sequence.h */,
+				FAED2A601A6565DC00069751 /* jubeatLabAccess.h */,
+				C0481C52199FAE4900AF45B3 /* BFCodec.h */,
+				FA0620041AAAF72700663498 /* MarkerList.plist */,
+				C075E41C199F482200F4CEE0 /* Package */,
+				C075E420199F482200F4CEE0 /* Supporting Files */,
+			);
+			path = JuBeatArcade;
+			sourceTree = "<group>";
+		};
+		C075E41C199F482200F4CEE0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C075E41D199F482200F4CEE0 /* DEBIAN */,
+				C075E426199F482200F4CEE0 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C075E41D199F482200F4CEE0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C075E41E199F482200F4CEE0 /* control.txt */,
+				C075E41F199F482200F4CEE0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C075E420199F482200F4CEE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C075E421199F482200F4CEE0 /* PackageVersion.plist */,
+				C075E422199F482200F4CEE0 /* JuBeatArcade-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C075E426199F482200F4CEE0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C075E427199F482200F4CEE0 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C075E427199F482200F4CEE0 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C075E428199F482200F4CEE0 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C075E428199F482200F4CEE0 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C075E429199F482200F4CEE0 /* JuBeatArcade.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C075E413199F482200F4CEE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5DDCD1AE7CE0A006A7371 /* MobileGestalt.h in Headers */,
+				FA96B3291A6CEE0900752F03 /* JubeatAppDelegate.h in Headers */,
+				C0481C56199FAE4900AF45B3 /* KUnzip.h in Headers */,
+				FA14DE0E1A79D6070086A2B3 /* Sequence.h in Headers */,
+				C0481BE8199F514300AF45B3 /* DebugHelper.h in Headers */,
+				C0481BEC199F514300AF45B3 /* EncryptHelper.h in Headers */,
+				C0481C31199F6A3500AF45B3 /* AFHTTPSessionManager.h in Headers */,
+				FA96B32F1A6CF84C00752F03 /* GameViewController.h in Headers */,
+				FAED2A611A6565DC00069751 /* jubeatLabAccess.h in Headers */,
+				C0481C38199F6A3500AF45B3 /* AFURLConnectionOperation.h in Headers */,
+				C0481C46199F6A3500AF45B3 /* RNCryptorEngine.h in Headers */,
+				FA5845671A5FE169002F3561 /* IO.h in Headers */,
+				C0481C43199F6A3500AF45B3 /* RNCryptor.h in Headers */,
+				C0481C33199F6A3500AF45B3 /* AFNetworking.h in Headers */,
+				C0481C3E199F6A3500AF45B3 /* AFURLSessionManager.h in Headers */,
+				FA1BD22D1A9CAF8200C36EFC /* CocoaSecurity.h in Headers */,
+				C0481C2F199F6A3500AF45B3 /* AFHTTPRequestOperationManager.h in Headers */,
+				FAED2A651A65678B00069751 /* EditDataManager.h in Headers */,
+				C0481C08199F519900AF45B3 /* ServerHelper.h in Headers */,
+				C0481C40199F6A3500AF45B3 /* Base64.h in Headers */,
+				FA5066CA1A9CBD6B000EF2F3 /* MarkerTestView.h in Headers */,
+				C0481C4F199F6AF900AF45B3 /* GTMDefines.h in Headers */,
+				FA1BD22A1A9C9D4000C36EFC /* MarkerManager.h in Headers */,
+				C0481C45199F6A3500AF45B3 /* RNCryptor+Private.h in Headers */,
+				C0481BF3199F514300AF45B3 /* JbaHelper.h in Headers */,
+				C0481C3C199F6A3500AF45B3 /* AFURLResponseSerialization.h in Headers */,
+				FA96B32D1A6CF83B00752F03 /* RendererConf.h in Headers */,
+				C0481C48199F6A3500AF45B3 /* RNDecryptor.h in Headers */,
+				C0481BEE199F514300AF45B3 /* FileHelper.h in Headers */,
+				C0481C36199F6A3500AF45B3 /* AFSecurityPolicy.h in Headers */,
+				C0481C42199F6A3500AF45B3 /* RNCryptor-Prefix.pch in Headers */,
+				C0481C34199F6A3500AF45B3 /* AFNetworkReachabilityManager.h in Headers */,
+				C0481C3A199F6A3500AF45B3 /* AFURLRequestSerialization.h in Headers */,
+				C0481BEA199F514300AF45B3 /* DesHelper.h in Headers */,
+				C0481C4D199F6AF900AF45B3 /* GTMBase64.h in Headers */,
+				C0481C2D199F6A3500AF45B3 /* AFHTTPRequestOperation.h in Headers */,
+				C0481C55199FAE4900AF45B3 /* BFCodec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C075E415199F482200F4CEE0 /* JuBeatArcade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C075E42C199F482200F4CEE0 /* Build configuration list for PBXNativeTarget "JuBeatArcade" */;
+			buildPhases = (
+				C075E410199F482200F4CEE0 /* ShellScript */,
+				C075E411199F482200F4CEE0 /* Sources */,
+				C075E412199F482200F4CEE0 /* Frameworks */,
+				C075E413199F482200F4CEE0 /* Headers */,
+				C075E414199F482200F4CEE0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuBeatArcade;
+			productName = JuBeatArcade;
+			productReference = C075E416199F482200F4CEE0 /* JuBeatArcade.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C075E40C199F482200F4CEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = C075E40F199F482200F4CEE0 /* Build configuration list for PBXProject "JuBeatArcade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C075E40B199F482200F4CEE0;
+			productRefGroup = C075E417199F482200F4CEE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C075E415199F482200F4CEE0 /* JuBeatArcade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C075E410199F482200F4CEE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		C075E414199F482200F4CEE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C075E411199F482200F4CEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0481C39199F6A3500AF45B3 /* AFURLConnectionOperation.m in Sources */,
+				C0481BE9199F514300AF45B3 /* DebugHelper.m in Sources */,
+				C0481BF4199F514300AF45B3 /* JbaHelper.m in Sources */,
+				C075E425199F482200F4CEE0 /* JuBeatArcade.mm in Sources */,
+				C0481C49199F6A3500AF45B3 /* RNDecryptor.m in Sources */,
+				FA1BD22E1A9CAF8200C36EFC /* CocoaSecurity.m in Sources */,
+				C0481C41199F6A3500AF45B3 /* Base64.m in Sources */,
+				C0481C44199F6A3500AF45B3 /* RNCryptor.m in Sources */,
+				C0481C3D199F6A3500AF45B3 /* AFURLResponseSerialization.m in Sources */,
+				C0481BEB199F514300AF45B3 /* DesHelper.m in Sources */,
+				C0481C3B199F6A3500AF45B3 /* AFURLRequestSerialization.m in Sources */,
+				C0481C37199F6A3500AF45B3 /* AFSecurityPolicy.m in Sources */,
+				C0481C2E199F6A3500AF45B3 /* AFHTTPRequestOperation.m in Sources */,
+				C0481C3F199F6A3500AF45B3 /* AFURLSessionManager.m in Sources */,
+				C0481C4E199F6AF900AF45B3 /* GTMBase64.m in Sources */,
+				C0481BED199F514300AF45B3 /* EncryptHelper.m in Sources */,
+				C0481C09199F519900AF45B3 /* ServerHelper.m in Sources */,
+				C0481C47199F6A3500AF45B3 /* RNCryptorEngine.m in Sources */,
+				C0481C32199F6A3500AF45B3 /* AFHTTPSessionManager.m in Sources */,
+				C0481BEF199F514300AF45B3 /* FileHelper.m in Sources */,
+				C0481C35199F6A3500AF45B3 /* AFNetworkReachabilityManager.m in Sources */,
+				C0481C30199F6A3500AF45B3 /* AFHTTPRequestOperationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C075E42A199F482200F4CEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C075E42B199F482200F4CEE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C075E42D199F482200F4CEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JuBeatArcade/JuBeatArcade-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+					"$(PROJECT_DIR)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C075E42E199F482200F4CEE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JuBeatArcade/JuBeatArcade-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+					"$(PROJECT_DIR)",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C075E40F199F482200F4CEE0 /* Build configuration list for PBXProject "JuBeatArcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C075E42A199F482200F4CEE0 /* Debug */,
+				C075E42B199F482200F4CEE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C075E42C199F482200F4CEE0 /* Build configuration list for PBXNativeTarget "JuBeatArcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C075E42D199F482200F4CEE0 /* Debug */,
+				C075E42E199F482200F4CEE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C075E40C199F482200F4CEE0 /* Project object */;
+}
